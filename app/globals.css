@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* Pretendard Variable - 가변 폰트 (한 파일로 100~900 굵기 지원) */
+@font-face {
+  font-family: "Pretendard";
+  src: url("/PretendardVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Tailwind v4: 기본 sans 폰트를 Pretendard로 (유틸 클래스·기본 스타일 모두 적용) */
+@theme {
+  --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+}
